@@ -56,15 +56,19 @@ class HelloWorld extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
           color: Colors.black,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+          child: Stack(
             children: [
-              const Text("Saya dibawah sendiri",
-                  style: TextStyle(
-                    color: Colors.white,
-                  )),
-              Padding(
-                padding: const EdgeInsets.only(left: 200),
+              const SizedBox(
+                height: 60,
+                width: double.infinity,
+                child: Text("Saya dibawah sendiri",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                    )),
+              ),
+              Positioned(
+                right: 0,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       shape: const CircleBorder(), primary: Colors.yellow),
