@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/latihan/hello_world.dart';
+import 'package:hello_world/latihan/hari_6.dart';
+// import 'package:hello_world/latihan/hari_5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const HelloWorld(),
+      home: const Assets(),
     );
   }
 }
